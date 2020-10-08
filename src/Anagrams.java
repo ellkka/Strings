@@ -1,22 +1,4 @@
 public class Anagrams {
-    private String word;
-    private String anagram;
-
-    public String getWord() {
-        return word;
-    }
-
-    public void setWord(String word) {
-        this.word = word;
-    }
-
-    public String getAnagram() {
-        return anagram;
-    }
-
-    public void setAnagram(String anagram) {
-        this.anagram = anagram;
-    }
 
     public boolean isAnagrams(String word, String anagram){
 
