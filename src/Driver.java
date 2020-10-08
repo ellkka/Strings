@@ -22,7 +22,7 @@ public class Driver {
        int option;
 
         do {
-            System.out.println("What to validate: \n 1. Email\n 2.PostCode\n 3. Phone number\n 4. Exit");
+            System.out.println("What to validate: \n 1. Email\n 2. Phone number\n 3. Postcode\n 4. Exit");
             option = input.nextInt();
 
             switch (option) {
@@ -33,14 +33,15 @@ public class Driver {
                     System.out.println(validate.validateEmailAddress(email));
                     break;
                 case 2:
-                    System.out.println("2: ");
+                    System.out.println("Enter phone number:");
+                    String phoneNumber = input.next();
+                    System.out.println(validate.validatePhoneNumber(phoneNumber));
                     break;
                 case 3:
                     System.out.println("3: ");
                     break;
                 case 4:
                     break;
-
             }
         } while (option != 4);
     }
